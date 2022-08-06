@@ -16,6 +16,7 @@ class ItemRegistry {
     companion object {
         // Items
         val GEM = Item(FabricItemSettings().group(Main.ITEM_GROUP))
+        val RED_GEM = Item(FabricItemSettings().group(Main.ITEM_GROUP))
 
         // Blocks
         val GEM_ORE = Block(FabricBlockSettings.of(Material.AMETHYST).strength(4.0f))
@@ -23,6 +24,7 @@ class ItemRegistry {
 
     fun RegisterItems(){
         Registry.register(Registry.ITEM, Identifier(Main.MODID, "gem"), Companion.GEM)
+        Registry.register(Registry.ITEM, Identifier(Main.MODID, "red_gem"), Companion.RED_GEM)
     }
 
     fun RegisterBlock(){
